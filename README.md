@@ -73,6 +73,10 @@ Two sources, two transform paths, one warehouse. Tickets go through AWS Glue (he
 
 **Relationship:** one ticket → many logs, joined on `ticket_id`.
 
+The full model is built out in Power BI as a proper star schema — not just the two raw source tables. dim_date centralizes date logic so both support_tickets and support_logs can be filtered and trended consistently without duplicating calendar fields. dim_tickets acts as a bridge dimension, cleanly relating the two fact tables through a single ticket_id rather than a direct many-to-many join. A dedicated key_measures table holds all DAX measures (Avg CPU %, Error Rate %, avg resolution minutes, Total Logs, etc.), keeping calculations separate from raw columns. This structure is what powers both dashboards below.
+
+
+
 ---
 
 ## Dashboards
