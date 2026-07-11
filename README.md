@@ -47,7 +47,6 @@ Sample dashboard output from a single day of data (July 1, 2025):
 
 ## Architecture
 
-![Pipeline Architecture]
 
 <img width="5214" height="2224" alt="Image" src="https://github.com/user-attachments/assets/f0c40dde-7843-42e3-81fd-f3e3489a3fbc" />
 
