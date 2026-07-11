@@ -47,7 +47,9 @@ Sample dashboard output from a single day of data (July 1, 2025):
 
 ## Architecture
 
-![Pipeline Architecture](architecture/pipeline_architecture.png)
+![Pipeline Architecture]
+
+<img width="5214" height="2224" alt="Image" src="https://github.com/user-attachments/assets/f0c40dde-7843-42e3-81fd-f3e3489a3fbc" />
 
 ```
 MySQL (tickets) ──┐
@@ -77,11 +79,15 @@ Two sources, two transform paths, one warehouse. Tickets go through AWS Glue (he
 
 **CarePlus Ticket Insights** — total/resolved/open/escalated tickets, avg interactions, avg resolution time, tickets by agent, ticket status by channel, resolution time by category and priority.
 
-![Ticket Insights](dashboards/ticket_insights.png)
+![Ticket Insights]
+
+<img width="1126" height="541" alt="Image" src="https://github.com/user-attachments/assets/b7eaa952-7ae9-4540-9878-a37f31fc331d" />
 
 **CarePlus Support Logs** — total logs, avg CPU, avg response time, logs by user agent and severity, CPU trend over time, response-time distribution vs. ticket volume, with a day-by-day selector across the full month.
 
-![Support Logs](dashboards/support_logs.png)
+![Support Logs]
+
+<img width="958" height="540" alt="Image" src="https://github.com/user-attachments/assets/a867fa34-1b69-41c5-9dc5-c4ccbd3ad98e" />
 
 ---
 
