@@ -7,7 +7,7 @@ CarePlus is a simulated BPO company running customer support across multiple cha
 
 A support ticket is created and tracked in MySQL. Separately, every backend interaction on that same ticket — API calls, session activity, CPU load, errors — gets written to a raw `.log` file with no schema and no link back to the ticket system except a shared ID buried in unstructured text.
 
-Answering a basic question — *"which agent has the slowest resolution time, and were their sessions hitting backend errors?"* — meant manually opening a database, manually opening log files, and manually cross-referencing by hand. There was no single source of truth, no automation, and no way to trust the numbers without a human doing the joining every time.
+**Answering a basic question** — *"which agent has the slowest resolution time, and were their sessions hitting backend errors?"* — meant manually opening a database, manually opening log files, and manually cross-referencing by hand. There was no single source of truth, no automation, and no way to trust the numbers without a human doing the joining every time.
 
 ## What CarePlus Does
 
