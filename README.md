@@ -89,9 +89,8 @@ Serverless ETL design · event-driven vs. batch compute tradeoffs · schema desi
 
 ---
 
-## Good to Know
+## What I actually built:**
 
-**What I actually built:**
 - The full ingestion → transform → storage → warehouse → analytics → BI pipeline described above, end to end
 - Incremental, checkpoint-based daily loading for both data sources
 - Custom regex log parser with real data-quality cleaning logic
