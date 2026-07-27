@@ -97,9 +97,3 @@ Serverless ETL design · event-driven vs. batch compute tradeoffs · schema desi
 - IAM role-based secure warehouse loading
 - A star-schema Power BI model with two live dashboards
 
-**What I understand conceptually but didn't implement in this version:**
-- *Production monitoring/alerting (CloudWatch alarms, SNS notifications):* "I'd add threshold-based alerts on ingestion lag and Glue job failures, routed to Slack or email, before running this in production."
-- *Cost optimization tuning (Glue DPU sizing, caching layers):* "I'd profile actual job runtimes first, then right-size Glue workers and consider result caching for the most repeated Athena queries."
-- *Formal SLA/data contracts and lineage tooling:* "I'd define an explicit freshness SLA and add a lightweight lineage tool like OpenLineage once more teams depend on this data."
-- *CI/CD and infrastructure-as-code:* "Right now deployment is manual; I'd move to Terraform or CDK plus GitHub Actions so environment changes are version-controlled and repeatable."
-
