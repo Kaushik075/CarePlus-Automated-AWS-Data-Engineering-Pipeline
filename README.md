@@ -2,6 +2,8 @@
 
 Centralizes fragmented MySQL ticket data and raw system logs from a simulated BPO support operation into a single automated AWS pipeline — turning scattered, manually-queried data into live Power BI dashboards with zero manual reporting.
 
+> **Attribution:** This project is based on a scenario from the [Codebasics Data Engineering Bootcamp](https://codebasics.io). I built and ran it end to end in my own AWS environment (S3, Glue, Athena, Redshift Serverless).
+
 ## The Problem
 
 CarePlus is a simulated BPO company running customer support across multiple channels. Support ticket data lived in MySQL. Separately, every backend interaction — API calls, session activity, CPU load, errors — was written to a raw `.log` file with no schema and no easy link back to the ticket system except a shared ticket ID buried in unstructured text.
